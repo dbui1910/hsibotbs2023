@@ -1,3 +1,29 @@
+
+div.myform {
+    display: flex;
+    justify-content: center;
+    
+}
+
+h1.signup {
+    text-align: center;
+}
+/* 
+* {
+
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+} */
+
+/* body {
+    display: flex;
+    justify-content: center;
+} */
+
+
+/* 
+
 body {
     width: 100%;
     height: 100%;
@@ -6,11 +32,22 @@ body {
     background-size: cover;
 }
 
-form {
-    font-size:medium;
-    width:200;
 
+form {
+    border-radius: 10px;
+    background-color: #efd1c6;
+    width: 600px;
+    padding: 10px;
+    /* text-align: center; */
+    /* width: 500px;
+    height: 250px; */
+    /* font-size:medium;
 }
+
+h1 {
+    text-align: center;
+} */
+
 
 /* .registrationForm{
 

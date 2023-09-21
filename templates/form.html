@@ -7,76 +7,80 @@
     <link rel="stylesheet" href="static/form.css">
 </head>
 
+
 <body>
+    <div class="myForm">
 
-    <form>
-        <h1>Sign-up Information:</h1>
-
-        <label for="fname">Name:</label>
-        <input type="text" name="firstName" id="fname" required>
+        <h1 class="signup">Sign-up Information:</h1>
         
-        <label for="lname">Last Name:</label>
-        <input type="text" name="lastname" id="lname" required>
-        <br>
-        <br>
-        <label for="email">Email:</label>
-        <input type="email" name="mail" id="email" required>
-        <label for="number">Phone number:</label>
-        <input type="tel" name="number" id="number" required>
-        <br>
-        <br>
-        <label for="username">Username:</label>
-        <input type="text" name="username" id="username" required>
-        <label for="password">Password:</label>
-        <input type="password" name="password" id="password" required>
-        <br>
-        <br>
-        <label for="gender">Gender:</label>
-            <select name="gender" id="gender" required>
-                <option value="female">Female</option>
-                <option value="male">Male</option>
-                <option value="other">Other</option>    
-            </select>
-        
-        <label for="dateOfBirth">Birthday:</label>
-        <input type="date" name="dateOfBirth" id="dateOfBirth" required>
+        <form action="">
 
-        
-        <h1>Personal Food Preferences</h1>
+            <label for="fname">First Name:</label>
+            <input type="text" placeholder="First Name" name="firstName" id="fname" required>
+            
+            <label for="lname">Last Name:</label>
+            <input type="text" name="lastname" id="lname" required>
+            <br>
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" name="mail" id="email" required>
+            <label for="number">Phone number:</label>
+            <input type="tel" name="number" id="number" required>
+            <br>
+            <br>
+            <label for="username">Username:</label>
+            <input type="text" name="username" id="username" required>
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" required>
+            <br>
+            <br>
+            <label for="gender">Gender:</label>
+                <select name="gender" id="gender" required>
+                    <option value="female">Female</option>
+                    <option value="male">Male</option>
+                    <option value="other">Other</option>    
+                </select>
+            
+            <label for="dateOfBirth">Birthday:</label>
+            <input type="date" name="dateOfBirth" id="dateOfBirth" required>
 
-        <label for="foodPrefs">Dietary Restrictions:</label>
-        <br>
-        <input type="checkbox" name="dairyfree" id="dairyfree">
-        <label for="dairyfree">Dairy-free</label>
-        <br>
-        <input type="checkbox" name="vegetarian" id="vegetarian">
-        <label for="vegetarian">Vegetarian</label>
-        <br>
-        <input type="checkbox" name="pescatarian" id="pescatarian">
-        <label for="pescatarian">Pescatarian</label>
-        <br>
-        <input type="checkbox" name="Halal" id="Halal">
-        <label for="Halal">Halal</label>
-        <br>
-        <input type="checkbox" name="kosher" id="kosher">
-        <label for="kosher">Kosher</label>
-        <br>
-        <input type="checkbox" name="nutallergy" id="nutallergy">
-        <label for="nutallergy">Nut allergy</label>
-        <br>
-        <input type="checkbox" name="shellfish" id="shellfish">
-        <label for="shellfish">Shellfish</label>
-        <br>
-        <input type="checkbox" name="other" id="other">
-        <label for="other">Other</label>
-        <br>
-        <input type="checkbox" name="none" id="none">
-        <label for="none">None of the above</label>
-        <br>
-        <br>
-        <button type="submit" name="submit">Submit</button>
+            
+            <h1>Personal Food Preferences</h1>
 
-    </form>
+            <label for="foodPrefs">Dietary Restrictions:</label>
+            <br>
+            <input type="checkbox" name="dairyfree" id="dairyfree">
+            <label for="dairyfree">Dairy-free</label>
+            <br>
+            <input type="checkbox" name="vegetarian" id="vegetarian">
+            <label for="vegetarian">Vegetarian</label>
+            <br>
+            <input type="checkbox" name="pescatarian" id="pescatarian">
+            <label for="pescatarian">Pescatarian</label>
+            <br>
+            <input type="checkbox" name="Halal" id="Halal">
+            <label for="Halal">Halal</label>
+            <br>
+            <input type="checkbox" name="kosher" id="kosher">
+            <label for="kosher">Kosher</label>
+            <br>
+            <input type="checkbox" name="nutallergy" id="nutallergy">
+            <label for="nutallergy">Nut allergy</label>
+            <br>
+            <input type="checkbox" name="shellfish" id="shellfish">
+            <label for="shellfish">Shellfish</label>
+            <br>
+            <input type="checkbox" name="other" id="other">
+            <label for="other">Other</label>
+            <br>
+            <input type="checkbox" name="none" id="none">
+            <label for="none">None of the above</label>
+            <br>
+            <br>
+            <button type="submit" name="submit">Submit</button>
+
+        </form>
+    </div>
 
 </body>
 
