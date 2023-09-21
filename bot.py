@@ -1,12 +1,7 @@
-from flask import Flask, render_template
 import openai
-app = Flask(__name__)
 
-@app.route('/')
-def index():
-    return render_template('index.html')
-
-openai.api_key = "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"
+# Set your OpenAI API key
+openai.api_key = "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"
 
 # Define the conversation
 conversation = [
@@ -26,6 +21,3 @@ assistant_reply = response.choices[0].message["content"]
 
 # Print the assistant's response
 print("Assistant:", assistant_reply)
-
-if __name__ == '__main__':
-    app.run(debug=True)
