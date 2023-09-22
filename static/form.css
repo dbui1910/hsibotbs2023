@@ -1,0 +1,37 @@
+
+body {
+    background: url('g.jpg');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin:0;
+}
+
+div.myForm {
+
+    /* width: 450px; */
+    border-radius: 10px;
+    border:solid;
+    padding: 10px;
+    background: rgb(255,255,255,0.5);
+    backdrop-filter: blur(20px);
+    margin: 4px;
+}
+
+h1.signup {
+    text-align: center;
+}
+
+h1.food {
+    text-align: center;
+}
+
+label {
+    display: inline-block;
+    box-sizing:border-box;
+    padding:2px;
+}
+input {
+    display: inline-block;
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HeartyHealthy</title>
+    <link rel="stylesheet" href="static/form.css">
+</head>
+
+
+<body>
+    <div class="myForm">
+
+        <h1 class="signup">Sign-up Information:</h1>
+        
+        <form>
+
+            <label for="fname">First Name:</label>
+            <input type="text" placeholder="First Name" name="firstName" id="fname" required><br>
+            
+            <label for="lname">Last Name:</label>
+            <input type="text" placeholder="Last Name" name="lastname" id="lname" required><br>
+            <label for="email">Email:</label>
+            <input type="email" placeholder="Email" name="mail" id="email" required><br>
+            <label for="number">Phone number:</label>
+            <input type="tel" placeholder="Phone Number" name="number" id="number" required><br>
+            <label for="username">Username:</label>
+            <input type="text" placeholder="Username" name="username" id="username" required><br>
+            <label for="password">Password:</label>
+            <input type="password" placeholder="Password" name="password" id="password" required><br>
+            <label for="gender">Gender:</label>
+                <select name="gender" id="gender" required><br>
+                    <option value="" disabled selected>Option</option>
+                    <option value="female">Female</option>
+                    <option value="male">Male</option>
+                    <option value="other">Other</option>    
+                </select><br>
+            
+            <label for="dateOfBirth">Birthday:</label>
+            <input type="date" name="dateOfBirth" id="dateOfBirth" required><br>
+
+            <label for="ethnicity">Ethnicity:</label>
+                <select name="ethnicity" id="ethnicity">
+                    <option value="" disabled selected>Option</option>
+                    <option value="Caucasian/White">Caucasian</option>
+                    <option value="Asian">Asian</option>
+                    <option value="African">African American/Black</option>
+                    <option value="Hispanic">Hispanic or Latino</option>
+                    <option value="Indian">American Indian</option>
+                    <option value="Other">Other</option>
+                </select>
+            
+            <h1 class="food">Personal Food Preferences</h1>
+
+            <label for="foodPrefs">Dietary Restrictions:</label><br>
+            <input type="checkbox" name="dairyfree" id="dairyfree">
+            <label for="dairyfree">Dairy-free</label>
+            <br>
+            <input type="checkbox" name="glutenfree" id="glutenfree">
+            <label for="glutenfree">Gluten-free</label>
+            <br>
+            <input type="checkbox" name="vegetarian" id="vegetarian">
+            <label for="vegetarian">Vegetarian</label>
+            <br>
+            <input type="checkbox" name="pescatarian" id="pescatarian">
+            <label for="pescatarian">Pescatarian</label>
+            <br>
+            <input type="checkbox" name="Halal" id="Halal">
+            <label for="Halal">Halal</label>
+            <br>
+            <input type="checkbox" name="kosher" id="kosher">
+            <label for="kosher">Kosher</label>
+            <br>
+            <input type="checkbox" name="nutallergy" id="nutallergy">
+            <label for="nutallergy">Nut allergy</label>
+            <br>
+            <input type="checkbox" name="shellfish" id="shellfish">
+            <label for="shellfish">Shellfish</label>
+            <br>
+            <input type="checkbox" name="other" id="other">
+            <label for="other">Other</label>
+            <br>
+            <input type="checkbox" name="none" id="none">
+            <label for="none">None of the above</label>
+            <br>
+            <br>
+            <button type="button" onclick="location.href='template/generate.html'">Submit</button>
+            <a href="generate.html">Buton</a>
+        </form>
+    </div>
+
+</body>
+
+</html>

@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return render_template('index.html')
+    return render_template('form.html')
 
 openai.api_key = "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"
 
