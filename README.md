@@ -33,7 +33,7 @@ $  OR python3 app.py
 ### Expected output and error handling
 
 ```
-![Alt Text](https://github.com/dbui1910/hsibotbs2023/blob/main/firstpage.png)
+![Alt Text](./firstpage.png)
 ```
 ### Use of libraries
 To open a Flask application you need to create a Flask instance with the following lines:
