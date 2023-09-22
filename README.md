@@ -6,7 +6,7 @@ This project is made in the backend in Python 3.11, while the frontend is design
 - [flask](https://pypi.org/project/Flask/) 
 - [openai](https://platform.openai.com/docs/libraries/python-library)
 
-### Instalation
+### Installation
 Install with pip
 ```
 $ pip install flask
