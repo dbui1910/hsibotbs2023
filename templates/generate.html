@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,8 +9,8 @@
 </head>
 
 <body>
-    <div class = "first">
-        <header>
+    <div class="first">
+      <header>
             <a href="#" class="logo">HeartyHealthy</a>
             <nav>
                 <a href="#generate">Generate</a>
@@ -17,31 +18,41 @@
             </nav>
         </header>
     </div>
-
+    <section id="hometext">“The people who give you their food give you their heart.” - Cesar Chavez </section>
     <div class="second">
-        <section id="hometext">“The people who give you their food give you their heart.” - Cesar Chavez</section>
         <section id="generate">
             <div class="container">
                 <div class="content-section">
+                    <!-- Card One -->
                     <div class="card">
                         <img src="static/img1.png">
                         <h5 class="text1">Card One</h5>
-                        <p>blablabla</p>
+                        <p><strong>Meal Name:</strong> {{ meal_plan[0].mealName }}</p>
+                        <p><strong>Meal Description:</strong> {{ meal_plan[0].mealDescription }}</p>
+                        <p><strong>Recipe Name:</strong> {{ meal_plan[0].recipeName }}</p>
                     </div>
+
+                    <!-- Card Two -->
                     <div class="card">
                         <img src="static/img2.png">
                         <h5 class="text1">Card Two</h5>
-                        <p>blablabla</p>
+                        <p><strong>Meal Name:</strong> {{ meal_plan[1].mealName }}</p>
+                        <p><strong>Meal Description:</strong> {{ meal_plan[1].mealDescription }}</p>
+                        <p><strong>Recipe Name:</strong> {{ meal_plan[1].recipeName }}</p>
                     </div>
+
+                    <!-- Card Three -->
                     <div class="card">
                         <img src="static/img3.png">
                         <h5 class="text1">Card Three</h5>
-                        <p>blablabla</p>
+                        <p><strong>Meal Name:</strong> {{ meal_plan[2].mealName }}</p>
+                        <p><strong>Meal Description:</strong> {{ meal_plan[2].mealDescription }}</p>
+                        <p><strong>Recipe Name:</strong> {{ meal_plan[2].recipeName }}</p>
                     </div>
                 </div>
             </div>
         </section>
     </div>
-
 </body>
 </html>
+

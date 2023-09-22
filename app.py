@@ -3,7 +3,7 @@ import openai
 import json
 app = Flask(__name__)
 
-openai.api_key = "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"
+openai.api_key = "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"
 
 @app.route('/')
 def index():
@@ -50,12 +50,19 @@ def generate():
     print(selected_labels)
     # Define the conversation as a list of message dictionaries
     conversation = [
-            {"role": "system", "content": "You are a helpful assistant."},
-            {"role": "user", "content": f"I want you get data from people who are facing obesity, diebities, cancer, high cholesterol"},
-            {"role": "user", "content": f"They are in their 30-40 years old"},
-            {"role": "user", "content": f"My dietary restrictions are: {', '.join(selected_labels)}"},
-            {"role": "assistant", "content": "Suggest 3 meal plan for them. ONLY give output of JSON array of mealPlan object which is a list of meal objects including mealID, meal's name, meal's description, recipe's name"}
-        ]
+    {"role": "system", "content": "You are a helpful assistant."},
+    {"role": "user", "content": f"I want you to provide me with meal plans for people facing obesity, diabetes, cancer, or high cholesterol."},
+    {"role": "user", "content": f"These individuals are in their 30-40 years old."},
+    {"role": "user", "content": f"My dietary restrictions are: {', '.join(selected_labels)}"},
+    {"role": "assistant", "content": 'Generate a JSON response with the following structure as an example:\n' +
+                                       '{"mealPlan": [' +
+                                       '{"mealID": "1", "mealName": "Green Power Salad", "mealDescription": "A refreshing salad packed with nutrient-dense greens and plant-based proteins.", "recipeName": "Green Power Salad Recipe"},' +
+                                       '{"mealID": "2", "mealName": "Quinoa Stuffed Bell Peppers", "mealDescription": "Colorful bell peppers stuffed with a flavorful mixture of quinoa, vegetables, and spices.", "recipeName": "Quinoa Stuffed Bell Peppers Recipe"},' +
+                                       '{"mealID": "3", "mealName": "Chickpea Curry with Brown Rice", "mealDescription": "A delicious and protein-rich curry made with chickpeas, aromatic spices, and served with nutritious brown rice.", "recipeName": "Chickpea Curry with Brown Rice Recipe"}' +
+                                       ']}'
+    }
+]
+
     # Make a chat completion request
     response = openai.ChatCompletion.create(
         model="gpt-3.5-turbo",
@@ -86,7 +93,7 @@ def generate():
     print(meal_plan)
 
     # Return the assistant's response
-    return render_template('generate.html')
+    return render_template('generate.html', meal_plan=meal_plan)
 
 
 if __name__ == '__main__':
