@@ -6,6 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="static/generate.css">
+    <style>
+        /* Add CSS styles for the card text */
+        .card {
+            /* Add some left margin for indentation */
+            margin-left: 20px;
+        }
+
+        .card p {
+            /* Adjust font size to make it smaller */
+            font-size: 14px;
+        }
+    </style>
 </head>
 
 <body>
@@ -25,8 +37,7 @@
                 <div class="content-section">
                     <!-- Card One -->
                     <div class="card">
-                        <img src="static/img1.png">
-                        <h5 class="text1">Card One</h5>
+                        <img src="static/food3.jpeg">
                         <p><strong>Meal Name:</strong> {{ meal_plan[0].mealName }}</p>
                         <p><strong>Meal Description:</strong> {{ meal_plan[0].mealDescription }}</p>
                         <p><strong>Recipe Name:</strong> {{ meal_plan[0].recipeName }}</p>
@@ -34,8 +45,7 @@
 
                     <!-- Card Two -->
                     <div class="card">
-                        <img src="static/img2.png">
-                        <h5 class="text1">Card Two</h5>
+                        <img src="static/food3.jpeg">
                         <p><strong>Meal Name:</strong> {{ meal_plan[1].mealName }}</p>
                         <p><strong>Meal Description:</strong> {{ meal_plan[1].mealDescription }}</p>
                         <p><strong>Recipe Name:</strong> {{ meal_plan[1].recipeName }}</p>
@@ -43,8 +53,7 @@
 
                     <!-- Card Three -->
                     <div class="card">
-                        <img src="static/img3.png">
-                        <h5 class="text1">Card Three</h5>
+                        <img src="static/food3.jpeg">
                         <p><strong>Meal Name:</strong> {{ meal_plan[2].mealName }}</p>
                         <p><strong>Meal Description:</strong> {{ meal_plan[2].mealDescription }}</p>
                         <p><strong>Recipe Name:</strong> {{ meal_plan[2].recipeName }}</p>

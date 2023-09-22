@@ -3,7 +3,7 @@ import openai
 import json
 app = Flask(__name__)
 
-openai.api_key = "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"
+openai.api_key = "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"
 
 @app.route('/')
 def index():
