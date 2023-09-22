@@ -1,7 +1,7 @@
 # hsibotbs2023
 ## Project: Hearty Healthy
 
-This project is made in the backend in Python 3.11 and Flask, while the frontend is designed in HTML and CSS
+Hearty Healthy is a web application that is in the processing of developing. We succesfully developed and designed an API that can integrate with chatGPT api using GPT3.5 model. In this folder, we added a screenshot of our expected output and some error handlings
 ### Built With
 
 ***
@@ -31,12 +31,9 @@ $ python app.py
 $  OR python3 app.py
 ```
 ### Figma (Web app mock up)
-
-```
 Due to our time constraint, we were not able to develop all the functionalities and features of the app. Here is the lonk of our UI/UX design of Hearty Healthy.
 https://www.figma.com/file/GXdIOU0ikDRYFat6XZ7rI0/Hearty-Healthy?type=design&node-id=0%3A1&mode=design&t=eYaYop8juvUjOZtg-1
 
-```
 ### Use of libraries
 To open a Flask application you need to create a Flask instance with the following lines:
 ```
@@ -55,12 +52,17 @@ openai.api_key = "############################################"
 
 # Define the conversation as a list of message dictionaries
 conversation = [
-      {"role": "system", "content": "You are a helpful assistant."},
-      {"role": "user", "content": f"My name is Katie and I am 39 years old."},
-      {"role": "user", "content": f"My health concerns are: diebetic"},
-      {"role": "user", "content": f"My dietary restrictions are: vegan."},
-      {"role": "assistant", "content": "What recipe should I recommend for you today?"}
-  ]
+    {"role": "system", "content": "You are a helpful assistant."},
+    {"role": "user", "content": f"I want you to provide me with meal plans for people facing obesity, diabetes, cancer, or high cholesterol."},
+    {"role": "user", "content": f"These individuals are in their 30-40 years old."},
+    {"role": "user", "content": f"My dietary restrictions are: {', '.join(selected_labels)}"},
+    {"role": "assistant", "content": 'Generate a JSON response with the following structure as an example:\n' +
+                                       '{"mealPlan": [' +
+                                       '{"mealID": "1", "mealName": "", "mealDescription": "", "recipeName": ""},' +
+                                       '{"mealID": "2", "mealName": "", "mealDescription": "", "recipeName": ""},' +
+                                       '{"mealID": "3", "mealName": "", "mealDescription": "", "recipeName": ""}' +
+                                       ']}'
+    }
 
 # Make a chat completion request
 response = openai.ChatCompletion.create(
