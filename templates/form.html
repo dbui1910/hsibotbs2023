@@ -13,7 +13,7 @@
 
         <h1 class="signup">Modify Information:</h1>
         
-        <form>
+        <form action="/generate" method="POST">
 
             <label for="fname">First Name:</label>
             <input type="text" placeholder="First Name" name="firstName" id="fname" required><br>
@@ -53,38 +53,39 @@
             <h1 class="food">Personal Food Preferences</h1>
 
             <label for="foodPrefs">Dietary Restrictions:</label><br>
-            <input type="checkbox" name="dairyfree" id="dairyfree">
-            <label for="dairyfree">Dairy-free</label>
+            <input type="checkbox" id="dairyfree" name="dietary_restrictions[]" value="Dairy-free">
+            <label for="dairyfree">Dairy-free</label><br>
+            
+            <input type="checkbox" id="glutenfree" name="dietary_restrictions[]" value="Gluten-free">
+            <label for="glutenfree">Gluten-free</label><br>
+            
+            <input type="checkbox" id="vegetarian" name="dietary_restrictions[]" value="Vegetarian">
+            <label for="vegetarian">Vegetarian</label><br>
+            
+            <input type="checkbox" id="pescatarian" name="dietary_restrictions[]" value="Pescatarian">
+            <label for="pescatarian">Pescatarian</label><br>
+            
+            <input type="checkbox" id="Halal" name="dietary_restrictions[]" value="Halal">
+            <label for="Halal">Halal</label><br>
+            
+            <input type="checkbox" id="kosher" name="dietary_restrictions[]" value="Kosher">
+            <label for="kosher">Kosher</label><br>
+            
+            <input type="checkbox" id="nutallergy" name="dietary_restrictions[]" value="Nut allergy">
+            <label for="nutallergy">Nut allergy</label><br>
+            
+            <input type="checkbox" id="shellfish" name="dietary_restrictions[]" value="Shellfish">
+            <label for="shellfish">Shellfish</label><br>
+            
+            <input type="checkbox" id="other" name="dietary_restrictions[]" value="Other">
+            <label for="other">Other</label><br>
+            
+            <input type="checkbox" id="none" name="dietary_restrictions[]" value="None of the above">
+            <label for="none">None of the above</label><br>
             <br>
-            <input type="checkbox" name="glutenfree" id="glutenfree">
-            <label for="glutenfree">Gluten-free</label>
             <br>
-            <input type="checkbox" name="vegetarian" id="vegetarian">
-            <label for="vegetarian">Vegetarian</label>
-            <br>
-            <input type="checkbox" name="pescatarian" id="pescatarian">
-            <label for="pescatarian">Pescatarian</label>
-            <br>
-            <input type="checkbox" name="Halal" id="Halal">
-            <label for="Halal">Halal</label>
-            <br>
-            <input type="checkbox" name="kosher" id="kosher">
-            <label for="kosher">Kosher</label>
-            <br>
-            <input type="checkbox" name="nutallergy" id="nutallergy">
-            <label for="nutallergy">Nut allergy</label>
-            <br>
-            <input type="checkbox" name="shellfish" id="shellfish">
-            <label for="shellfish">Shellfish</label>
-            <br>
-            <input type="checkbox" name="other" id="other">
-            <label for="other">Other</label>
-            <br>
-            <input type="checkbox" name="none" id="none">
-            <label for="none">None of the above</label>
-            <br>
-            <br>            
-            <button type="button" onclick="location.href='generate.html'">Submit</button>
+            <button type="submit">Submit</button>
+
         </form>
     </div>
 
