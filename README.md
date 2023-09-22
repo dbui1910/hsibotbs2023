@@ -30,10 +30,11 @@ $ pip3 install openai
 $ python app.py
 $  OR python3 app.py
 ```
-### Expected output and error handling
+### Figma (Web app mock up)
 
 ```
-<img width="1303" alt="firstpage" src="https://github.com/dbui1910/hsibotbs2023/assets/68297071/0bd4a1c3-8c32-4191-8368-d838c862934b">
+Due to our time constraint, we were not able to develop all the functionalities and features of the app. Here is the lonk of our UI/UX design of Hearty Healthy.
+https://www.figma.com/file/GXdIOU0ikDRYFat6XZ7rI0/Hearty-Healthy?type=design&node-id=0%3A1&mode=design&t=eYaYop8juvUjOZtg-1
 
 ```
 ### Use of libraries
