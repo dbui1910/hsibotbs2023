@@ -10,6 +10,7 @@ def index():
     
     return render_template('form.html')
 
+
 @app.route('/', methods=['POST'])
 def process_form():
     # # Process the form data here
