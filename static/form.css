@@ -1,59 +1,37 @@
 
-div.myform {
+body {
+    background: url('g.jpg');
     display: flex;
     justify-content: center;
-    
+    align-items: center;
+    min-height: 100vh;
+    margin:0;
+}
+
+div.myForm {
+
+    /* width: 450px; */
+    border-radius: 10px;
+    border:solid;
+    padding: 10px;
+    background: rgb(255,255,255,0.5);
+    backdrop-filter: blur(20px);
+    margin: 4px;
 }
 
 h1.signup {
     text-align: center;
 }
-/* 
-* {
 
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
-} */
-
-/* body {
-    display: flex;
-    justify-content: center;
-} */
-
-
-/* 
-
-body {
-    width: 100%;
-    height: 100%;
-    background-image: url(olivegreen.jpg);
-    background-position: center;
-    background-size: cover;
-}
-
-
-form {
-    border-radius: 10px;
-    background-color: #efd1c6;
-    width: 600px;
-    padding: 10px;
-    /* text-align: center; */
-    /* width: 500px;
-    height: 250px; */
-    /* font-size:medium;
-}
-
-h1 {
+h1.food {
     text-align: center;
-} */
+}
 
-
-/* .registrationForm{
-
-    width: 100%;
-    height: 100%;
-    background-image: url(olivegreen.jpg);
-    background-position: center;
-    background-size: cover;
-} */
+label {
+    display: inline-block;
+    box-sizing:border-box;
+    padding:2px;
+}
+input {
+    display: inline-block;
+}
