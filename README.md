@@ -1,11 +1,18 @@
 # hsibotbs2023
 ## Project: Hearty Healthy
 
-This project is made in the backend in Python 3.11, while the frontend is designed in HTML and CSS
-### Libraries used in the project
-- [flask](https://pypi.org/project/Flask/) 
-- [openai](https://platform.openai.com/docs/libraries/python-library)
+This project is made in the backend in Python 3.11 and Flask, while the frontend is designed in HTML and CSS
+### Built With
 
+***
+
+- Python
+
+- Flask
+
+- HTML5
+
+- CSS
 ### Installation
 Install with pip
 ```
@@ -17,6 +24,16 @@ Install with pip3
 $ pip3 install flask
 $ pip3 install openai
 ```
+### Run the server
+
+```
+$ python app.py
+$  OR python3 app.py
+```
+### Expected output and error handling
+
+```
+
 ### Use of libraries
 To open a Flask application you need to create a Flask instance with the following lines:
 ```
